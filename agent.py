@@ -53,7 +53,6 @@ class Agent:
         return np.array(state, dtype=int)
 
     def count_reachable_space(self, start_pt, game):
-        """Алгоритм Flood Fill для подсчета доступного места"""
         if game.is_collision(start_pt):
             return 0
 

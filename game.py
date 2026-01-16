@@ -17,14 +17,14 @@ class Direction(Enum):
 Point = namedtuple('Point', 'x, y')
 
 BLOCK_SIZE = 20
-SPEED = 100
+SPEED = 200
 
 
 class SnakeGameAI:
     def __init__(self, w=640, h=480):
         self.w, self.h = w, h
         self.display = pygame.display.set_mode((self.w, self.h))
-        pygame.display.set_caption('Snake AI: Hard Constraints Mode')
+        pygame.display.set_caption('Snake AI')
         self.clock = pygame.time.Clock()
         self.font = pygame.font.SysFont('arial', 25, bold=True)
         self.reset()
